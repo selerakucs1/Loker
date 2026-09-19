@@ -41,22 +41,3 @@ git push -u origin main --force
 ```
 
 ---
-
-## ⚡ Panduan Deploy ke Vercel
-
-Aplikasi ini dibangun menggunakan **Next.js 15 (App Router)**, sehingga sangat kompatibel dan langsung siap (*zero-config*) di-deploy ke **Vercel**.
-
-### Langkah-langkah Deploy:
-
-1. Buka [vercel.com](https://vercel.com) dan login menggunakan akun GitHub Anda (`selerakucs1`).
-2. Klik tombol **"Add New..."** > **"Project"**.
-3. Pada daftar *Import Git Repository*, pilih repository **`Loker`** (atau cari `selerakucs1/Loker`), lalu klik **"Import"**.
-4. Di bagian **Configure Project**:
-   - **Framework Preset**: Pilih `Next.js` (akan terdeteksi secara otomatis).
-   - **Root Directory**: `./` (biarkan default).
-   - **Build and Output Settings**: Biarkan default (`npm run build`).
-5. **Environment Variables**:
-   Tambahkan variabel lingkungan berikut:
-   - **`GEMINI_API_KEY`**: Masukkan Google Gemini API Key Anda (dapat dibuat gratis di [Google AI Studio](https://aistudio.google.com/app/apikey)).
-6. Klik **"Deploy"**.
-7. Tunggu proses build selama ~1-2 menit hingga selesai. Website Anda akan langsung aktif dengan URL seperti `https://loker-*.vercel.app`!
